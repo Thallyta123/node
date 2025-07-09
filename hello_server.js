@@ -5,9 +5,10 @@ var atendeRequisicao = function(request, response) {
     response.write("<h1>Hello World!</h1>");
     response.end();
 }
+var server = http.createServer(atendeRequisicao);
 
-var server = function() {
+var serverLigou = function() {
     console.log('Servidor Hello World rodando!');
 }
-server.listen(3000, servidorLigou);
+server.listen(3000, serverLigou);
 
